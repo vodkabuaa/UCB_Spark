@@ -28,6 +28,7 @@ We now have an RDD that is only words.  Next, let's apply the `wordCount()` func
 You'll notice that many of the words are common English words. These are called stopwords. In a later lab, we will see how to eliminate them from the results.
 Use the `wordCount()` function and `takeOrdered()` to obtain the fifteen most common words and their counts.
 
-# TODO: Replace <FILL IN> with appropriate code
+TODO: Replace <FILL IN> with appropriate code
+
 top15WordsAndCounts = wordCount(shakeWordsRDD).takeOrdered(15, key=lambda x: -x[1])
 print '\n'.join(map(lambda (w, c): '{0}: {1}'.format(w, c), top15WordsAndCounts))
